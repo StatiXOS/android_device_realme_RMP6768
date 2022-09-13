@@ -88,10 +88,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# Symbols
+# Shims
 PRODUCT_PACKAGES += \
     libshim_vtservice \
-    libshim_showlogo
+    libshim_showlogo \
+    libshim_audio
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -428,6 +429,5 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 # VNDK
 PRODUCT_PACKAGES += \
     libui-v32 \
-    libutils-v32 \
     libutils-v30 \
-    libmedia_helper-v30
+    libutils-v32
