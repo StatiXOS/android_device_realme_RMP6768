@@ -180,10 +180,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 # Ril
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_rmp_mt6768
-TARGET_RECOVERY_DEVICE_MODULES := libinit_rmp_mt6768
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
