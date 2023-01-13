@@ -4,12 +4,12 @@
     "target_path": "device/realme/RMP6768"
   },
   {
-    "repository": "android_vendor_realme_RMP6768",
-    "target_path": "vendor/realme/RMP6768"
+    "repository": "android_device_realme_RMP6768-kernel",
+    "target_path": "device/realme/RMP6768-kernel"
   },
   {
-    "repository": "android_kernel_realme_RMP6768",
-    "target_path": "kernel/realme/RMP6768"
+    "repository": "android_vendor_realme_RMP6768",
+    "target_path": "vendor/realme/RMP6768"
   },
   {
     "repository": "android_hardware_mediatek",

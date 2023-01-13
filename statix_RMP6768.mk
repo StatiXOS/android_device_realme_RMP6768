@@ -18,19 +18,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common StatiX stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit from RMP6768 device
 $(call inherit-product, device/realme/RMP6768/device.mk)
 
-# ArrowOS Specific Flags
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1080
-DEVICE_MAINTAINER := NeilChetty
+# StatiX Specific Flags
+scr_resolution := 1440
+INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SCREEN_HEIGHT := 2000
+TARGET_SCREEN_WIDTH := 1200
 
 PRODUCT_DEVICE := RMP6768
-PRODUCT_NAME := arrow_RMP6768
+PRODUCT_NAME := statix_RMP6768
 PRODUCT_BRAND := Realme
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := Realme Pad

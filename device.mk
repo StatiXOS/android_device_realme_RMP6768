@@ -37,23 +37,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     android.hardware.light-service.RMP6768
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2000
-TARGET_SCREEN_WIDTH := 1200
-
-# Camera (GCamGo or TeraCube)
-ifeq ($(ARROW_OFFICIAL), true)
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/permissions/privapp-permissions-gcamgo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gcamgo.xml
-else
-PRODUCT_PACKAGES += \
-    Camera
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/permissions/privapp-permissions-teracube.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-teracube.xml
-endif
-
 # A/B
 AB_OTA_UPDATER := false
 

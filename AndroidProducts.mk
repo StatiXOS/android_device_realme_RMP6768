@@ -15,9 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_RMP6768.mk
+    $(LOCAL_DIR)/statix_RMP6768.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_RMP6768-user \
-    arrow_RMP6768-userdebug \
-    arrow_RMP6768-eng
+    statix_RMP6768-user
