@@ -15,6 +15,7 @@
 #
 
 DEVICE_PATH := device/realme/RMP6768
+KERNEL_PATH := device/realme/RMP6768-kernel
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -27,6 +28,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RMP6768/RMP6768-vendor.mk)
+
+# Copy Kernel
+KERNEL_IMAGE := $(KERNEL_PATH)/Image
+PRODUCT_COPY_FILES += $(KERNEL_IMAGE):kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += $(KERNEL_PATH)/kernel-headers
 
 # Product Details
 PRODUCT_SHIPPING_API_LEVEL := 30
