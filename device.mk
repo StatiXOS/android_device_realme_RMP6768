@@ -272,7 +272,6 @@ PRODUCT_PACKAGES += \
     libnbaio_mono \
     libalsautils \
     libdownmix \
-    libtinyxml \
     tinymix
 
 # Bluetooth
