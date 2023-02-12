@@ -26,11 +26,15 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 $(call inherit-product, device/realme/RMP6768/device.mk)
 
 # StatiX Specific Flags
-scr_resolution := 1440
+ENABLE_GAMETOOLS := true
 INCLUDE_PIXEL_LAUNCHER := true
+
+# Boot animation
+scr_resolution := 1440
 TARGET_SCREEN_HEIGHT := 2000
 TARGET_SCREEN_WIDTH := 1200
 
+# Device info
 PRODUCT_DEVICE := RMP6768
 PRODUCT_NAME := statix_RMP6768
 PRODUCT_BRAND := Realme
