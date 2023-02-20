@@ -32,6 +32,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RMP6768/RMP6768-vendor.mk)
 
+# Inherit non-ab devices
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 # Copy Kernel
 KERNEL_IMAGE := $(KERNEL_PATH)/Image
 PRODUCT_COPY_FILES += $(KERNEL_IMAGE):kernel
