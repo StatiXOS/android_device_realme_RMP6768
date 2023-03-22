@@ -27,7 +27,6 @@ $(call inherit-product, device/realme/RMP6768/device.mk)
 
 # StatiX Specific Flags
 ENABLE_GAMETOOLS := true
-INCLUDE_PIXEL_LAUNCHER := true
 
 # Device info
 PRODUCT_DEVICE := RMP6768
